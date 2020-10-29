@@ -1,0 +1,10 @@
+{
+    "name": "socket-js-tests",
+    "version": "0.0.1",
+    "description": "Tests with socket.io",
+    "dependencies": {
+        "express": "^4.15.2",
+        "npm": "^6.14.8",
+        "socket.io": "^2.3.0"
+    }
+}
