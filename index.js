@@ -48,3 +48,4 @@ Here are some ideas to improve the application:
 */
 
 //node index.js
+//ngrok http -hostname=gwakman.eu.ngrok.io 3000
