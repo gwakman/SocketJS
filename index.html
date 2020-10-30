@@ -14,24 +14,9 @@
   </head>
   <body>
     <h1>Bienvenue</h1>
-    <form action="">
-      <p>Entrez votre nom</p><input id="name" autocomplete="off" /><button>Send</button>
+    <form action="/chat" method="post">
+      <p>Entrez votre nom</p><input type="text" name="name" autocomplete="off"/>
+      <button>Submit</button>
     </form>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script>
-      $(function () {
-        var socket = io();
-        $('form').submit(function(e) {
-          e.preventDefault(); // prevents page reloading
-          socket.emit('log in', $('#name').val());
-          $('#name').val('');
-          return false;
-        });
-        socket.on('redirect', function(url){
-          window.location.href = url;
-        });
-      });
-    </script>
   </body>
 </html>
